@@ -1,13 +1,7 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  externalCode: MyString
-  name: MyString
-  email: MyString
-  contact: MyString
-
-two:
-  externalCode: MyString
-  name: MyString
-  email: MyString
-  contact: MyString
+  externalCode: 2525787
+  name: José Souza
+  email: jose@email.com
+  contact: 11997785858

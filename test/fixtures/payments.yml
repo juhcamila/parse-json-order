@@ -1,11 +1,6 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  externalCode: MyString
-  type: 
-  value: 1.5
-
-two:
-  externalCode: MyString
-  type: 
-  value: 1.5
+  payment_type: CREDIT_CARD
+  value: 66.00
+  order: one

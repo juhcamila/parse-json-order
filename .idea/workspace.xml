@@ -31,6 +31,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Juh Camila\projetos\teste\parse-json-order\test\controllers\api\v1" />
       <recent name="C:\Users\Juh Camila\projetos\teste\parse-json-order\app\controllers\api\v1" />
       <recent name="C:\Users\Juh Camila\projetos\teste\parse-json-order\app\controllers\api" />
     </key>
@@ -119,6 +120,7 @@
     </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpringUtil" SPRING_PRE_LOADER_OPTION="true" RAKE_SPRING_PRE_LOADER_OPTION="true" RAILS_SPRING_PRE_LOADER_OPTION="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="ca909036-669a-4f90-a199-bb101724be12" name="Default Changelist" comment="" />
@@ -126,7 +128,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1615137743249</updated>
-      <workItem from="1615137744490" duration="8875000" />
+      <workItem from="1615137744490" duration="32838000" />
     </task>
     <servers />
   </component>
@@ -134,9 +136,13 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1085" y="230" width="672" height="678" key="search.everywhere.popup" timestamp="1615159461753">
+    <state x="1200" y="325" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1615220403560">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1085" y="230" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1615159461753" />
+    <state x="1200" y="325" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1615220403560" />
+    <state x="1085" y="230" width="672" height="678" key="search.everywhere.popup" timestamp="1615222532018">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1085" y="230" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1615222532018" />
   </component>
 </project>

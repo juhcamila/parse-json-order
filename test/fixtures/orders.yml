@@ -1,41 +1,22 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  externalCode: MyString
+  externalCode: 998707
   storeId: 1
-  subTotal: MyString
-  deliveryFee: MyString
-  total_shipping: 1.5
-  total: MyString
-  country: MyString
-  state: MyString
-  city: MyString
-  district: MyString
-  street: MyString
-  complement: MyString
-  latitude: MyString
-  longitude: MyString
+  subTotal: 60.00
+  deliveryFee: 6.00
+  total_shipping: 6.00
+  total: 66.00
+  country: BR
+  state: São Paulo
+  city: São Paulo
+  district: Centro
+  street: Rua Principal
+  complement: S/C
+  latitude: -23.25258
+  longitude: -5.5555555
   dtOrderCreate: 2021-03-07 01:15:30
-  postalCode: MyString
-  number: MyString
-  customer_id: one
+  postalCode: 15041000
+  number: 35
+  customer: one
 
-two:
-  externalCode: MyString
-  storeId: 1
-  subTotal: MyString
-  deliveryFee: MyString
-  total_shipping: 1.5
-  total: MyString
-  country: MyString
-  state: MyString
-  city: MyString
-  district: MyString
-  street: MyString
-  complement: MyString
-  latitude: MyString
-  longitude: MyString
-  dtOrderCreate: 2021-03-07 01:15:30
-  postalCode: MyString
-  number: MyString
-  customer_id: two

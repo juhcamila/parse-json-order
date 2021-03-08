@@ -4,10 +4,9 @@ class CreateItems < ActiveRecord::Migration[6.1]
       t.string :name
       t.float :price
       t.integer :quantity
+      t.string :externalCode
       t.float :total
       t.references :order, null: false, foreign_key: true
-
-      t.timestamps
     end
   end
 end

@@ -19,23 +19,22 @@ ActiveRecord::Schema.define(version: 2021_03_07_180534) do
     t.string "name"
     t.string "email"
     t.string "contact"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
+    t.string "externalCode"
   end
 
   create_table "items", force: :cascade do |t|
     t.string "name"
     t.float "price"
     t.integer "quantity"
+    t.string "externalCode"
     t.float "total"
     t.bigint "order_id", null: false
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
     t.index ["order_id"], name: "index_items_on_order_id"
   end
 
   create_table "orders", force: :cascade do |t|
     t.integer "storeId"
+    t.string "externalCode"
     t.string "subTotal"
     t.string "deliveryFee"
     t.float "total_shipping"
@@ -46,35 +45,23 @@ ActiveRecord::Schema.define(version: 2021_03_07_180534) do
     t.string "district"
     t.string "street"
     t.string "complement"
-    t.string "latitude"
-    t.string "longitude"
+    t.float "latitude"
+    t.float "longitude"
     t.datetime "dtOrderCreate"
     t.string "postalCode"
     t.string "number"
     t.bigint "customer_id", null: false
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
     t.index ["customer_id"], name: "index_orders_on_customer_id"
   end
 
   create_table "payments", force: :cascade do |t|
-    t.string "type"
+    t.string "payment_type"
     t.float "value"
     t.bigint "order_id", null: false
-    t.datetime "created_at", precision: 6
-    t.datetime "updated_at", precision: 6
     t.index ["order_id"], name: "index_payments_on_order_id"
-  end
-
-  create_table "sub_items", force: :cascade do |t|
-    t.bigint "item_id", null: false
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-    t.index ["item_id"], name: "index_sub_items_on_item_id"
   end
 
   add_foreign_key "items", "orders"
   add_foreign_key "orders", "customers"
   add_foreign_key "payments", "orders"
-  add_foreign_key "sub_items", "items"
 end

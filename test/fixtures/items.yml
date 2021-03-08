@@ -1,17 +1,10 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  externalCode: MyString
+  externalCode: 1123525
   name: MyString
-  price: 1.5
+  price: 60.00
   quantity: 1
-  total: 1.5
-  orderExternalCode: one
+  total: 60.00
+  order: one
 
-two:
-  externalCode: MyString
-  name: MyString
-  price: 1.5
-  quantity: 1
-  total: 1.5
-  orderExternalCode: two
