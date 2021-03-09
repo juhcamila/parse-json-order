@@ -92,9 +92,17 @@ describe Api::V1::OrdersController do
     end
 
     it 'must return concluded' do
-      post api_v1_orders_path	, params: @payload.to_json
-
-      puts response.body
+      expect do
+        expect do
+          expect do
+            expect do
+              post api_v1_orders_path	, params: @payload
+            end.must_change 'Customer.count', 1
+          end.must_change 'Order.count', 1
+        end.must_change 'Item.count', 1
+      end.must_change 'Payment.count', 1
+      result = {"status": "Success", "message":"Concluded"}.to_json
+      expect(response.body).must_equal result
     end
   end
 end

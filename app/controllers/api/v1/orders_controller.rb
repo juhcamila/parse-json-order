@@ -1,7 +1,6 @@
 class Api::V1::OrdersController < ApplicationController
 
   def create
-    binding.pry
     save_data
     unless @data.empty?
       return render json: {status: 'ERROR', message: 'An error occurred while saving the data', data: @data.errors }, status: :unprocessable_entity
@@ -20,7 +19,7 @@ class Api::V1::OrdersController < ApplicationController
       )
 
     unless response.body == "OK"
-      return render json: {status: 'ERROR', message: 'An error occurred while saving the data', data: response.body }, status: :unprocessable_entity
+      return render json: {"status": 'ERROR', "message": 'An error occurred while saving the data', data: response.body }, status: :unprocessable_entity
     end
     render json: {status: 'Success', message:'Concluded'}, status: :ok
   end
