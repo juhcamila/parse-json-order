@@ -36,6 +36,7 @@ class Api::V1::OrdersController < ApplicationController
       end
 
       payload_order = create_payload_order(params)
+      payload_order[:customer_id] = customer.id
       @order = Order.create(payload_order)
       unless @order.errors.empty?
         @data = @order.errors
